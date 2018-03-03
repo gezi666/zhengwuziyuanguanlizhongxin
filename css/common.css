@@ -1,0 +1,313 @@
+
+body{
+    max-width:1800px;
+    min-width: 1280px;
+    margin:0 auto;
+    background:url(../imgs/bg.jpg) #072b75 no-repeat;
+}
+.header{
+    margin: 40px 20px 0;
+}
+.header .logo-box{
+    display:inline-block;
+    float:left;
+}
+.header .logo{
+    display:inline-block;
+    float:left;
+    width:424px;
+    height:47px;
+    background:url(../imgs/logo.png) no-repeat -14px 0;
+}
+.header .isSecret{
+    display:inline-block;
+    float:left;
+    width:58px;
+    height:20px;
+    line-height:20px;
+    border:1px solid #28a2f8;
+    border-radius:3px;
+    background:rgba(40,162,248,0.6);
+    text-align:center;
+    color:#fff;
+    margin-top:5px;
+    margin-left: -87px;
+}
+.header .menu-box{
+    display:inline-block;
+    float: left;
+    margin-left:60px;
+}
+.header .menu-box li{
+    float:left;
+}
+.header .menu-title{
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    border-radius:30px;
+    border:1px solid transparent;
+    color:#fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.header .menu-title.active,.header .menu-title:hover{
+    border:1px solid #08162c;
+    background:#122748;
+}
+.header .menu-title i.iconfont{
+    margin-right:10px;
+}
+.header .user-box a{
+    display:inline-block;
+    color:#fff;
+    margin-left:12px;
+}
+.header .user-box a:hover{
+    text-decoration:none;
+    opacity:0.8;
+}
+
+.header .user-box{
+    float: right;
+}
+.header .user-box .icon-gerenzhongxin{
+    float:left;
+    font-size: 28px;
+    line-height: 30px;
+}
+.header .user-box .userinfo-box{
+    display:inline-block;
+    padding:0 10px;
+    line-height:27px;
+}
+
+.header .user-box .icon-tuichu{
+    font-size:18px;
+}
+
+.content{
+    position:relative;
+    margin: 8px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-menu{
+    position:absolute;
+    left:0;
+    width:220px;
+    margin-top: 14px;
+}
+.main{
+    width:100%;
+    height:auto;
+    padding-left:220px;
+    box-sizing:border-box;
+}
+.crumb-box{
+    height:26px;
+    line-height:26px;
+    font-size:12px;
+    color:#fff;
+    padding-left:20px;
+}
+.crumb-box a{
+    color:#98d1ff;
+    text-decoration: none;
+}
+.main-body{
+    min-height:720px;
+    background:#fff;
+    border-radius:5px;
+}
+.footer{
+    width: 100%;
+}
+.footer .copyright{
+    height:60px;
+    line-height:60px;
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+    text-align:center;
+}
+.left-menu .line{
+    width:94%;
+    height:1px;
+    background:linear-gradient(to right, #0c3685, #619cff, #0e3c90);
+}
+.left-menu .menu-item{
+    display:block;
+    width:94%;
+    height:54px;
+    line-height:54px;
+    text-decoration: none;
+    /*border-bottom:1px solid #619cff;*/
+}
+
+.left-menu .menu-item i.menu-icons{
+    float:left;
+    width:30px;
+    height:20px;
+    margin-top: 18px;
+    background:url(../imgs/icons_menu.png) no-repeat;
+}
+.left-menu .menu-item .menu-icons.icon-menu1{background-position:0 -1px;}
+.left-menu .menu-item .menu-icons.icon-menu2{background-position:0 -29px;}
+.left-menu .menu-item .menu-icons.icon-menu3{background-position:0 -56px;}
+.left-menu .menu-item .menu-icons.icon-menu4{background-position:0 -84px;}
+
+.left-menu .menu-box .menu-item.active .menu-icons.icon-menu1{background-position:-32px -1px;}
+.left-menu .menu-box .menu-item.active .menu-icons.icon-menu2{background-position:-32px -29px;}
+.left-menu .menu-box .menu-item.active .menu-icons.icon-menu3{background-position:-32px -56px;}
+.left-menu .menu-box .menu-item.active .menu-icons.icon-menu4{background-position:-32px -84px;}
+.left-menu .menu-box .menu-item.active i.icon-xiala{
+    transform:rotate(180deg);
+}
+
+.left-menu .menu-item i.icon-xiala{
+    display:block;
+    float:right;
+    color:#76c2ff;
+}
+.left-menu .menu-item span{
+    font-size:18px;
+    color:#b4deff;
+}
+
+.left-menu .child-box{
+    display:none;
+    margin:9px 0;
+}
+.left-menu .child-item{
+    display:block;
+    height:32px;
+    line-height:32px;
+    text-decoration: none;
+}
+.left-menu .child-item span{
+    font-size:14px;
+    color:#6ebeff;
+}
+.left-menu .child-item i.icon-dot{
+    visibility: hidden;
+    float:left;
+    width:6px;
+    height:6px;
+    border-radius:6px;
+    background:linear-gradient(to bottom, #ffde00, #ffa302);
+    margin:12px;
+}
+.left-menu .child-item i.icon-toUp{
+    display:none;
+    float:right;
+    height: 30px;
+    color:#fff;
+    font-size: 36px;
+    margin-top: 0;
+    margin-right: -20px;
+}
+
+.left-menu .child-item:hover i.icon-dot,.left-menu li.active .child-item i.icon-dot{
+    visibility: visible;
+}
+.left-menu li.active .child-item i.icon-toUp{
+    display:block;
+}
+.left-menu .child-item:hover span,.left-menu li.active .child-item span{
+    color:#ffc000;
+}
+
+/*ztree样式*/
+.ztree{
+    box-sizing: border-box;
+    padding: 30px;
+}
+.ztree li span{
+    font-size: 14px;
+    color: #587498;
+}
+.ztree a:hover{
+    background: #e1f2fe;
+    text-decoration: none !important;
+}
+.ztree a.level0{
+    margin-bottom: 17px;
+}
+.ztree a.level1{
+    margin-bottom: 14px;
+}
+.ztree a.level2{
+    margin-bottom: 7px;
+}
+
+.ztree li span.button.roots_open,
+.ztree li span.button.bottom_open{
+    background-image: url("../imgs/tree-open.png");
+    background-position: center;
+}
+.ztree li span.button.roots_close,
+.ztree li span.button.bottom_close{
+    background-image: url("../imgs/tree-close.png");
+    background-position: center;
+}
+
+.ztree li span.button.diy01_ico_open,
+.ztree li span.button.diy01_ico_close,
+.ztree li span.button.diy02_ico_docu{
+    background-image: url("../imgs/tree-node.png");
+    background-position: center;
+}
+
+
+/*分页样式*/
+.pagination{
+    margin-top: 40px
+}
+.pagination li{
+    float:left;
+    display:inline-block;
+    line-height:25px;
+    font-size:12px;
+}
+.pagination li span{
+    line-height:27px;
+    color:#5e6c7e;
+}
+.pagination li.item a{
+    display:inline-block;
+    width:32px;
+    height:25px;
+    color:#5e6c7e;
+    text-align:center;
+    border:1px solid #c3c7cf;
+    margin-left:-1px;
+    text-decoration: none;
+}
+.pagination li.confirm a{
+    text-decoration: none;
+}
+.pagination .item.first a{
+    border-radius: 5px 0 0 5px;
+    margin-left:10px;
+}
+.pagination .item.last a{
+    border-radius: 0 5px 5px 0;
+    margin-right:10px;
+}
+.pagination .btn-queding{
+    display:inline-block;
+    float:right;
+    width:56px;
+    height:25px;
+    line-height:25px;
+    border:1px solid #afc9ee;
+    border-radius:3px;
+    background:#edf5ff;
+    text-align:center;
+    color:#5e6c7d;
+    font-size:12px;
+}
+.pagination li a:hover{
+    background: #d6e7fd;
+}

@@ -1,0 +1,39 @@
+.checking-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height:720px;
+    background: url(../imgs/checkBg.png) no-repeat center top;
+}
+.checking-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 395px;
+    height: 256px;
+    text-align: center;
+}
+.checking-box button{
+    width:253px;
+    height:49px;
+    font-size: 20px;
+    color: #fff;
+    margin: 35px 0;
+    background-image:-webkit-linear-gradient(to bottom, #659dfa, #527cca);
+    background-image:linear-gradient(to bottom, #659dfa, #527cca);
+    border:1px solid #4381e9;
+    border-top:1px solid #4b8af6;
+    border-bottom:1px solid #3a74d9;
+    border-radius:3px;
+    cursor:pointer;
+}
+.checking-box button:hover{
+    opacity: .9;
+}
+.checking-box p{
+    font-size: 14px;
+    color: #999;
+}

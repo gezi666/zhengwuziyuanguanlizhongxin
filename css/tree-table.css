@@ -1,0 +1,322 @@
+.contain-wrap{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.tree-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 20px;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+    border-right: 1px solid #e6e6e6;
+}
+.table-wrap{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 300px;
+}
+.title{
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #616871;
+    border-bottom: 1px dashed #d0d2d7;
+}
+.search-wrap{
+    margin-top: 30px;
+}
+.search-box{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #d0d2d7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.search-box i.iconfont{
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    color: #ff6c00;
+    line-height: 14px;
+    text-align: center;
+}
+.search-box .search-input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 215px;
+    height: 100%;
+    line-height: 28px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+.tabel-con{
+    margin-top: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d0d2d7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.operate-wrap{
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #d0d2d7;
+    background: #fbfbfd;
+    background: -webkit-linear-gradient(#fff,#f0f2f6); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(#fff,#f0f2f6); /* Opera 11.1-12.0 */
+    background: -moz-linear-gradient(#fff,#f0f2f6); /* Firefox 3.6-15 */
+    background: -ms-linear-gradient(#fff 0%,#f0f2f6 100%);/** IE9 IE10 **/
+    background: linear-gradient(#fff,#f0f2f6); /* 标准语法 */
+}
+.operate-list{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.table-wrap-authorize .operate-list,
+.audit-con .operate-list{
+    padding-left: 58px;
+}
+.operate-list li{
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    display: inline-block;
+    height: 100%;
+    line-height: 46px;
+    margin-left: 57px;
+    font-size: 14px;
+    color: #022335;
+    cursor: pointer;
+}
+.table-wrap-authorize .operate-list li,
+.audit-con .operate-list li{
+    margin: 0 124px 0 0;
+}
+.operate-list li:hover{
+    /*border-bottom: 1px solid #000;*/
+    opacity:0.8;
+}
+.operate-list li:before{
+    position: absolute;
+    content: '';
+    top: 14px;
+    left: -26px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../imgs/operate.png") no-repeat;
+}
+.operate-list li.download-item:before{
+    background-position: 0 0;
+}
+.operate-list li.import-item:before{
+    background-position: -40px 0;
+}
+.operate-list li.export-item:before{
+    background-position: -82px 0;
+}
+.operate-list li.export-all:before{
+    background-position: -120px 0;
+}
+.operate-list li.add-item:before{
+    background-position: -162px 0;
+}
+
+.table-wrap-authorize .operate-list li:before,
+.audit-con .operate-list li:before{
+    position: absolute;
+    content: '';
+    top: 12px;
+    left: -26px;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    background: url("../imgs/authorize-operate.png") no-repeat;
+}
+.table-wrap-authorize  .operate-list li.add-authorize:before{
+    background-position: 0 0;
+}
+.table-wrap-authorize  .operate-list li.stop-authorize:before{
+    background-position: -185px 0;
+}
+.table-wrap-authorize  .operate-list li.del-authorize:before{
+    background-position: -377px 0;
+}
+
+.audit-con .operate-list li:before{
+    background: url("../imgs/audit.png") no-repeat;
+}
+.audit-con  .operate-list li.audit-passed:before{
+    background-position: 0 0;
+}
+.audit-con  .operate-list li.audit-back:before{
+    background-position: -36px 0;
+}
+
+/*目录授权列表样式*/
+.table-wrap-authorize{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+}
+/*资源审核与报送样式*/
+.audit-table-con{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+
+/*表格样式*/
+.table{
+    box-sizing: border-box;
+    width: 100%;
+}
+.table td{
+    text-align: center;
+}
+.audit-table-con .table td{
+    white-space: nowrap;
+    padding: 0 26px;
+}
+.table td.ckeck-col{
+    width: 80px;
+}
+.table td .ckeck-box{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid #d0d2d7;
+    border-radius: 3px;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+.table td .ckeck-box.active{
+    background: #fff url('../imgs/checked.png') center no-repeat;
+}
+.table thead tr{
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #d0d2d7;
+    background: #f1f1f1;
+}
+.table tbody tr{
+    box-sizing: border-box;
+    height: 42px;
+}
+.table tbody tr:nth-child(even){
+    background: #f6f6f6;
+}
+.table tbody tr:hover{
+    background: #fff4eb;
+}
+.table .tabel-operate{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #4c4c4c;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.table .tabel-operate .iconfont{
+    position: absolute;
+    top: 2px;
+    left: -22px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+.table-wrap-authorize .table .edit{
+    margin: 0  63px 0 0 ;
+}
+.table tbody tr:hover .icon-tingyong{
+    color: #ff9d02;
+}
+.table tbody tr:hover .icon-bianji{
+    color: #02a3ff;
+}
+.table tbody tr:hover .icon-shanchu{
+    color: #ff6046;
+}
+.table tbody tr:hover .icon-icon04{
+    /*color: #8bdd9c;*/
+    color: #ff9d02;
+}
+.table tbody tr:hover .icon-tongguo{
+    color: #02a3ff;
+}
+.table tbody tr:hover .icon-tuihui{
+     color: #ff7c1d;
+ }
+
+
+/*select样式*/
+select{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #d0d2d7;
+    border-radius: 3px;
+    overflow: hidden;
+    outline: none;
+
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../imgs/select-ico.png") no-repeat;
+    background-position: 130px center;
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    /*padding-right: 14px;*/
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+select option{
+    height: 25px;
+    padding-left: 10px;
+}
+select.provider{
+    margin: 0 50px;
+}
+
+.table-sty table{
+    width:1430px;
+}
+.table-sty .audit-table-con .table td{
+    padding:0;
+}

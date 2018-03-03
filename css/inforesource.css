@@ -1,0 +1,17 @@
+
+.irbox{padding:20px;}
+.ittitle{line-height:40px;border-bottom:1px dashed #d3d5da;color:#616871;font-size:22px;}
+.irchart1{width:100%;height:600px;}
+.irchart2{width:50%;float:left;height:570px;}
+.irchart3{width:50%;float:right;height:570px;}
+
+.wvchart1{width:100%;height:430px;}
+.wvchart2{width:100%;height:400px;}
+.wvtable{margin-top:30px;}
+.wvtable table{width:100%;border:1px solid #e2e2e2;}
+.wvtable table th,.wvtable table td{padding:10px;text-align: center;}
+.wvtable table th{background:#f1f1f1;color:#6a6a6a;font-size:14px;border-bottom:1px solid #e2e2e2;}
+.wvtable table td{border-bottom:1px solid #f6f6f6;color:#4c4c4c;font-size:14px;}
+.wvtable table tr:nth-child(odd) td{background:#f6f6f6;}
+.wvtable table td.first{text-align: left;text-indent: 24px;}
+.wvtable table tr:hover td{background:#fff4eb;border-bottom:1px solid #f1dec8;}
